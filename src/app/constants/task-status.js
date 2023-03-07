@@ -1,0 +1,6 @@
+export const TaskStatus = {
+  GLOBAL_LIST: 'GLOBAL_LIST',
+  DAILY_LIST: 'DAILY_LIST',
+  ACTIVE: 'ACTIVE',
+  COMPLETED: 'COMPLETED',
+};

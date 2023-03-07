@@ -1,0 +1,14 @@
+<div id="box-shadow" class="flex-content-header-tasks-sticky for-task-header">
+    <div id="block-header-title" class="white-text header-title-none"><h1 id="header-title">Daily Task List</h1><a><span id="specific_add" class="icon-add icon-plus white-text fs-add"></span></a></div>
+    <div id="img-pomodoro-header">
+        <img width="240px" height="75px" src="../images/Logo.svg" alt="Logo Pomodoro">
+    </div>
+
+    <nav>
+        {{#each this}}
+            <li class="li-inline">
+                <a title="{{title}}" href="{{navigate}}"><span id="{{id}}" class="{{icon}} {{isVisible}}"></span></a>
+            </li>
+        {{/each}}
+    </nav>
+</div>

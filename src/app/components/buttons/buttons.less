@@ -1,0 +1,149 @@
+@import "../../../assets/less/helpers/_mixins.less";
+@import "../../../assets/less/helpers/_variables";
+
+.btns {
+
+  margin-bottom: 48px;
+
+  @media @breakpoint-tablet {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+}
+
+.btn {
+  width: 47.5%;
+  height: 72px;
+  .font-size(24px);
+  font-weight: bold;
+  color: @color-text;
+  cursor: pointer;
+  border: none;
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    width: @width-btn;
+    height: @height-btn;
+    .font-size(18px);
+  }
+}
+
+.btn-warning-timer {
+  .bg-tomato(@color-tomato);
+  .color-text(@color-text);
+  margin-right: 15px;
+
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    width: 175px;
+    height: 44px;
+  }
+
+  &:hover, &:focus {
+    background: @btn-warning-hover;
+  }
+
+  &:checked {
+    background: @btn-warning-checked;
+  }
+}
+
+.btn-primary, .btn-cancel, .btn-finish-task {
+  background: @btn-primary-color;
+
+  @media @breakpoint-tablet {
+    margin-right: 24px;
+  }
+
+  &:hover, &:focus {
+    background: @action-btn;
+  }
+
+  &:checked {
+    background: @btn-primary-checked;
+  }
+}
+
+.btn-primary, .btn-cancel {
+  margin-right: 15px;
+}
+
+.btn-timer, .btn-start-pomodoro {
+  background: @btn-success-color;
+
+  @media @breakpoint-tablet {
+    width: 100px;
+    height: @height-btn;
+  }
+
+  &:hover, &:focus {
+    background: @btn-success-hover-color;
+  }
+
+  &:checked {
+    background: @btn-success-checked;
+  }
+}
+
+.btn-start-pomodoro {
+  width: 48.5%;
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    width: 185px;
+  }
+}
+
+.btn-success {
+  width: 48%;
+  background: @btn-success-color;
+
+  @media @breakpoint-desktop, @breakpoint-tablet {
+    width: 100px;
+    height: @height-btn;
+  }
+
+  &:hover, &:focus {
+    background: @btn-success-hover-color;
+  }
+
+  &:checked {
+    background: @btn-success-checked;
+  }
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  @media @breakpoint-tablet {
+    margin-bottom: 72px;
+  }
+}
+
+.pos-btns-abs {
+  z-index: 5;
+  width: 520px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: 760px;
+  bottom: 0;
+  right: 0;
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    top: 560px;
+  }
+}
+
+.btn-timer-success {
+  background: @btn-success-color;
+}
+
+.ml-btn-finish-task {
+  margin-left: 15px;
+}
+
+.fs-text-completed {
+  font-size: 30px;
+}

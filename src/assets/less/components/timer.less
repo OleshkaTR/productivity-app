@@ -1,0 +1,271 @@
+//.header-timer {
+//  margin-bottom: 90px;
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    margin-bottom: 20px;
+//  }
+//}
+//
+//.navigation {
+//  text-align: right;
+//  margin-top: 44px;
+//  margin-bottom: 18px;
+//}
+//
+//.h-block {
+//  display: block;
+//}
+//
+//.mb-timer-text {
+//  margin-bottom: 32px;
+//  .font-size(20px);
+//}
+//
+//.iteration-timer-pomodoro {
+//  text-align: @center;
+//  margin-right: 16px;
+//  margin-bottom: 90px;
+//}
+//
+//.bg-image-pomodoro {
+//  height: 24px;
+//  width: 24px;
+//  margin-right: 12px;
+//}
+//
+//.block-circle {
+//  display: flex;
+//  align-items: @center;
+//  justify-content: @center;
+//  width: 265px;
+//  height: 265px;
+//  border-radius: 50%;
+//  margin: 0 auto;
+//  border: 5px solid @color-tomato-orange;
+//}
+//
+//.mb-timer {
+//  margin-bottom: 260px;
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    margin-bottom: 80px;
+//  }
+//}
+//
+//.btn-timer {
+//  width: 100%;
+//  height: 72px;
+//  .font-size(20px);
+//  font-weight: bold;
+//  color: #fff;
+//  cursor: pointer;
+//  border: none;
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    width: 100px;
+//    height: 44px;
+//  }
+//}
+//
+//
+//.tooltip-timer {
+//  display: inline-block;
+//
+//  &:hover {
+//    .tooltiptext-timer-left{
+//      visibility: visible;
+//    }
+//
+//    .tooltiptext-timer-right{
+//      visibility: visible;
+//    }
+//  }
+//
+//  .tooltiptext-timer-left {
+//    .tooltiptext-timer-mixin();
+//    left: 20px;
+//  }
+//
+//  .tooltiptext-timer-left::after {
+//    .tooltiptext-timer-mixin-after();
+//  }
+//
+//  .tooltiptext-timer-right {
+//    .tooltiptext-timer-mixin();
+//    right: 20px;
+//  }
+//
+//  .tooltiptext-timer-right::after {
+//    .tooltiptext-timer-mixin-after();
+//  }
+//}
+//
+//.timer-progress {
+//  margin-top: 155px;
+//  margin-bottom: 50px!important;
+//}
+//
+//.circle {
+//  position: absolute;
+//  display: inline-block;
+//  width: 245px;
+//  height: 245px;
+//  border-radius: 50%;
+//
+//  &.circle-quarter {
+//    background-image: linear-gradient(00deg, @background-body 50%, transparent 50%),
+//    linear-gradient(-90deg, @color-default 50%, transparent 50%);
+//  }
+//
+//  &.circle-full {
+//    background: #d1d1d1;
+//  }
+//}
+//
+//.circle:after {
+//  content: "";
+//  position: absolute;
+//  width: 160px;
+//  height: 160px;
+//  border-radius: 50%;
+//  top: 40px;
+//  left: 40px;
+//  background: @background-body;
+//}
+//
+//.text-in-circle {
+//  position: relative;
+//  z-index: 5;
+//  top: 20%;
+//}
+//
+//.text-in-circle-break {
+//  position: relative;
+//  z-index: 5;
+//  top: 30%;
+//  display: flex;
+//  justify-content: center;
+//}
+//
+//.fs-minutes {
+//  .font-size(100px);
+//  margin: 0;
+//}
+//
+//.fs-minutes-text {
+//  .font-size(24px);
+//  margin: 0;
+//}
+//
+//.fs-minutes-break {
+//  .font-size(26px);
+//  width: 105px;
+//}
+//
+//.btn-warning-timer {
+//  .bg-tomato(@color-tomato);
+//  .color-text(@color-text);
+//  margin-right: 15px;
+//  .font-size(18px);
+//
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    width: 175px;
+//    height: 44px;
+//  }
+//
+//  &:hover, &:focus {
+//    background: @btn-warning-hover;
+//  }
+//
+//  &:checked {
+//    background: @btn-warning-checked;
+//  }
+//}
+//
+//.btn-success-timer {
+//  .bg-tomato(@btn-success-color);
+//  .color-text(@color-text);
+//  .font-size(18px);
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    width: 195px;
+//    height: 44px;
+//  }
+//
+//  &:hover, &:focus {
+//    background: @btn-success-hover-color;
+//  }
+//
+//  &:checked {
+//    background: @btn-success-checked;
+//  }
+//}
+//
+//.btn-primary-timer {
+//  .bg-tomato(@btn-primary-checked);
+//  .color-text(@color-text);
+//  .font-size(18px);
+//  margin-left: 17px;
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    width: 150px;
+//    height: 44px;
+//    margin-left: 24px;
+//  }
+//
+//  &:hover, &:focus {
+//    background: @action-btn;
+//  }
+//
+//  &:checked {
+//    background: @btn-primary-checked;
+//    background: @btn-success-hover-color;
+//  }
+//
+//  &:checked {
+//    background: @btn-success-checked;
+//  }
+//}
+//
+//.fs-break-text {
+//  .font-size(16px);
+//  margin: 6px 0 0 0;
+//}
+//
+//.btn-success-pomodoro {
+//  .bg-tomato(@btn-success-color);
+//  .color-text(@color-text);
+//  .font-size(18px);
+//
+//  @media @breakpoint-tablet, @breakpoint-desktop {
+//    width: 195px;
+//    height: 44px;
+//  }
+//
+//  &:hover, &:focus {
+//    background: @btn-success-hover-color;
+//  }
+//
+//  &:checked {
+//    background: @btn-success-checked;
+//  }
+//
+//}
+//
+//.iteration-completed-timer-pomodoro {
+//  text-align: @center;
+//  margin-bottom: 90px;
+//}
+//
+//.mt-timer-completed-text {
+//  margin-top: 0;
+//  .font-size(26px);
+//  width: 135px;
+//}
+//
+//.flex-timer {
+//  display: flex;
+//  align-items: center;
+//  justify-content: space-between;
+//}

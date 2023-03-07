@@ -1,0 +1,13 @@
+<div class="none">
+    <h2 class="h-inline white-text">Daily Task List</h2>
+    <a><span class="icon-add add-task white-text fs-add"></span></a>
+</div>
+
+{{#if isTasksExist}}
+    <div id="tasks"></div>
+{{else}}
+    <figure>
+        <p><img class="img-add" src="/images/tomato-add.svg" alt="Tomato add"/></p>
+        <figcaption class="add-text">Add your first task</figcaption>
+    </figure>
+{{/if}}

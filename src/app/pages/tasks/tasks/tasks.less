@@ -1,0 +1,299 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+.tabs-task {
+  .font-size(20px);
+  text-align: right;
+  margin-bottom: 64px;
+}
+
+.a-global {
+  margin-bottom: 24px;
+}
+
+.daily-task {
+  margin-bottom: 40px;
+}
+
+.flex-content-header-tasks-without-h2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.flex-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow{
+  transform: rotate(0deg);
+  color: @color-default;
+}
+
+.arrow.active {
+  transform: rotate(270deg);
+}
+.icon-global-list-arrow-down:hover {
+  color: @color-default;
+}
+
+.h-inline {
+  display: inline-block;
+  margin: 0 10px 0;
+}
+
+#wrapper-global-tasks.hide {
+  visibility: hidden;
+}
+
+.all-tasks:focus {
+  color: @color-text;
+}
+.urgent-tasks:focus {
+  color: @color-text;
+}
+.high-tasks:focus {
+  color: @color-text;
+}
+.middle-tasks:focus {
+  color: @color-text;
+}
+.low-tasks:focus {
+  color: @color-text;
+}
+
+.default-color {
+  color: @color-default;
+}
+
+.white-text {
+  color: @color-text ;
+}
+
+.fs-arrow-down {
+  .font-size(13px)
+}
+
+.fs {
+  .font-size(22px);
+}
+
+.li-inline-global {
+  display: inline;
+  margin: 0;
+  text-align: right;
+}
+
+.m-line {
+  margin: 16px;
+  color: @color-default;
+}
+
+.pos-left {
+  text-align: left;
+}
+
+.clause-work {
+  border-left: 8px solid @work-color;
+  margin-bottom: 56px;
+}
+
+.clause-education {
+  border-left: 8px solid @education-color;
+  margin-bottom: 56px;
+}
+
+.clause-hobby {
+  border-left: 8px solid @hobby-color;
+  margin-bottom: 56px;
+}
+
+.clause-sport {
+  border-left: 8px solid @sport-color;
+  margin-bottom: 56px;
+}
+
+.clause-other {
+  border-left: 8px solid @other-color;
+  margin-bottom: 56px;
+}
+
+.categories-list-item-global {
+  left: 24px;
+  padding-bottom: 12px;
+  position: relative;
+  color: @color-default;
+  list-style: @none;
+}
+
+.work-global {
+  .color-text(@work-color);
+}
+.work-global::before {
+  content: "";
+  position: absolute;
+  width: @pixel-circle;
+  height: @pixel-circle;
+  border-radius: 50%;
+  left: @pixel-position-circle;
+  top: -2px;
+  background: @work-color;
+}
+.work-global::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid @background-body;
+  border-radius: 50%;
+  top: 1px;
+  left: -33px;
+  background: @work-color;
+}
+
+.education-global {
+  .color-text(@btn-primary-color);
+}
+.education-global::before {
+  content: "";
+  position: absolute;
+  width: @pixel-circle;
+  height: @pixel-circle;
+  border-radius: 50%;
+  top: -2px;
+  left: @pixel-position-circle;
+  background: @btn-primary-color;
+}
+.education-global::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid @background-body;
+  border-radius: 50%;
+  top: 1px;
+  left: -33px;
+  background: @education-color;
+}
+
+.hobby-global {
+  .color-text(@hobby-color);
+}
+.hobby-global::before {
+  content: "";
+  position: absolute;
+  width: @pixel-circle;
+  height: @pixel-circle;
+  border-radius: 50%;
+  top: -2px;
+  left: @pixel-position-circle;
+  background: @hobby-color;
+}
+.hobby-global::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid @background-body;
+  border-radius: 50%;
+  top: 1px;
+  left: -33px;
+  background: @hobby-color;
+}
+
+.sport-global {
+  .color-text(@sport-color);
+}
+.sport-global::before {
+  content: "";
+  position: absolute;
+  width: @pixel-circle;
+  height: @pixel-circle;
+  border-radius: 50%;
+  top: -2px;
+  left: @pixel-position-circle;
+  background: @sport-color;
+}
+.sport-global::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid @background-body;
+  border-radius: 50%;
+  top: 1px;
+  left: -33px;
+  background: @sport-color;
+}
+
+.other-global {
+  .color-text(@other-color);
+}
+.other-global::before {
+  content: "";
+  position: absolute;
+  width: @pixel-circle;
+  height: @pixel-circle;
+  border-radius: 50%;
+  top: -2px;
+  left: @pixel-position-circle;
+  background: @other-color;
+}
+.other-global::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid @background-body;
+  border-radius: 50%;
+  top: 1px;
+  left: -33px;
+  background: @other-color;
+}
+
+.daily-task-done {
+  display: none;
+  margin-bottom: 40px;
+  .if-done-work {
+    background: @background-done-task;
+border-left: 8px solid @work-color;
+  }
+  .if-done-education {
+    background: @background-done-task;
+border-left: 8px solid @education-color;
+  }
+  .if-done-hobby {
+    background: @background-done-task;
+    border-left: 8px solid @hobby-color;
+  }
+  .if-done-sport {
+    background: @background-done-task;
+    border-left: 8px solid @sport-color;
+  }
+  .if-done-other {
+    background: @background-done-task;
+    border-left: 8px solid @other-color;
+  }
+  h3 {
+    text-decoration: line-through;
+  }
+  .icon-trash, .icon-arrows-up, .icon-edit {
+    display: none;
+  }
+}
+
+.active {
+  color: @color-text;
+}
+
+.text-task-added {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.mt-tabs {
+  margin-top: -80px;
+}

@@ -1,0 +1,39 @@
+{{#if daily}}
+    <div id="{{id}}" class="{{categoryId}}-task {{id}} if-done-{{categoryId}}">
+        {{#if removeMode}}
+            <span id="icon-trash-{{id}}" class="icon-trash background-remove-{{categoryId}} block-trash trash-daily white-text fs-icon-trash"></span>
+            <span id="icon-close-{{id}}" class="icon-close background-remove-{{categoryId}} block-close close-daily white-text fs-icon-trash"></span>
+        {{else}}
+            <div class="date">
+                <h4>Today</h4>
+            </div>
+        {{/if}}
+        <div class="flex1">
+            <h3 class="color-header-{{priority}} size-header-task mb-header-task">{{title}}</h3>
+            <p>{{description}}</p>
+        </div>
+        <span title="Edit Task" id="{{id}}-edit" class="icon-edit mr-icon"></span>
+        <span title="Delete Task" class="icon-trash trash mr-icon"></span>
+        <div title="Go to Timer" class="on-pomodoro on-pomodoro-daily pomodoro-{{priority}}"><p class="text-pomodoro">{{estimation}}</p></div>
+    </div>
+{{else}}
+    <div id="{{id}}" class="{{categoryId}}-global-task if-done-{{categoryId}}">
+        {{#if removeMode}}
+            <span id="icon-trash-{{id}}" class="icon-trash background-remove-{{categoryId}} block-trash global-trash global white-text fs-icon-trash"></span>
+            <span id="icon-close-{{id}}" class="icon-close background-remove-{{categoryId}} block-close global-close global specify-close white-text fs-icon-trash"></span>
+        {{else}}
+            <div class="date">
+                <h2 class="h-global mb-for-day">{{deadlineDate.day}}</h2>
+                <h6 class="h-global">{{deadlineDate.month}}</h6>
+            </div>
+        {{/if}}
+        <div class="flex1">
+            <h3 class="color-header-{{priority}} size-header-task mb-header-task">{{title}}</h3>
+            <p>{{description}}</p>
+        </div>
+        <span title="Go to Daily List" class="icon-arrows-up mr-icon ml-arrow-up"></span>
+        <span title="Edit Task" class="icon-edit mr-icon"></span>
+        <span title="Delete Task" class="icon-trash trash mr-icon"></span>
+        <div class="on-pomodoro pomodoro-{{priority}}"><p class="text-pomodoro">{{estimation}}</p></div>
+    </div>
+{{/if}}

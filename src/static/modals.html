@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+<!--        ADD TASK-->
+        <div class="wrapper">
+            <div class="spans">
+                <span class="icon-close default-color fs-icon-close"></span>
+                <span class="icon-check default-color fs-icon-close"></span>
+            </div>
+            <div class="wrap">
+                <h1 class="white-text">Add Task</h1>
+
+                <div class="border-bottom-input">
+                    <p class="white-text">TITLE</p>
+                    <input type="text" placeholder="Add title here">
+                </div>
+
+                <div class="border-bottom-input">
+                    <p class="white-text">DESCRIPTION</p>
+                    <input type="text" placeholder="Add description here">
+                </div>
+
+
+                <div class="border-bottom-inputs-radio">
+                    <p class="white-text">CATEGORY</p>
+
+                    <form class="flex-inputs" action="#">
+                        <p>
+                            <input class="action-input input-work" type="radio" id="input-work" name="radio-group" checked>
+                            <label for="input-work">Work</label>
+                        </p>
+
+                        <p>
+                            <input class="action-input input-education" type="radio" id="input-education" name="radio-group">
+                            <label for="input-education">Education</label>
+                        </p>
+
+                        <p>
+                            <input class="action-input input-hobby" type="radio" id="input-hobby" name="radio-group">
+                            <label for="input-hobby">Hobby</label>
+                        </p>
+
+                        <p>
+                            <input class="action-input input-sport" type="radio" id="input-sport" name="radio-group">
+                            <label for="input-sport">Sport</label>
+                        </p>
+
+                        <p>
+                            <input class="action-input input-other" type="radio" id="input-other" name="radio-group">
+                            <label for="input-other">Other</label>
+                        </p>
+                    </form>
+
+
+                </div>
+
+                <div class="border-bottom-input">
+                    <p class="white-text">DEADLINE</p>
+                    <input type="text" placeholder="May 23, 2022">
+                </div>
+
+                <div class="border-bottom-input">
+                    <p class="white-text">ESTIMATION</p>
+                    <form>
+                        <div class="stars">
+                            <input type="radio" name="star" class="star-5" id="star-5" />
+                            <label class="star-5 pomodoro-label" for="star-5"></label>
+                            <input type="radio" name="star" class="star-4" id="star-4" />
+                            <label class="star-4 pomodoro-label" for="star-4"></label>
+                            <input type="radio" name="star" class="star-3" id="star-3" />
+                            <label class="star-3 pomodoro-label" for="star-3"></label>
+                            <input type="radio" name="star" class="star-2" id="star-2" />
+                            <label class="star-2 pomodoro-label" for="star-2"></label>
+                            <input type="radio" name="star" class="star-1" id="star-1" />
+                            <label class="star-1 pomodoro-label" for="star-1"></label>
+                            <span></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="border-bottom-inputs-radio">
+                    <p class="white-text">PRIORITY</p>
+
+                    <form class="flex-priority-inputs" action="#">
+                        <p class="mr-priority-input">
+                            <input class="action-input input-urgent" type="radio" id="input-urgent" name="radio-group" checked>
+                            <label for="input-urgent">Urgent</label>
+                        </p>
+
+                        <p class="mr-priority-input">
+                            <input class="action-input input-high" type="radio" id="input-high" name="radio-group">
+                            <label for="input-high">High</label>
+                        </p>
+
+                        <p class="mr-priority-input">
+                            <input class="action-input input-middle" type="radio" id="input-middle" name="radio-group">
+                            <label for="input-middle">Middle</label>
+                        </p>
+
+                        <p class="mr-priority-input">
+                            <input class="action-input input-low" type="radio" id="input-low" name="radio-group">
+                            <label for="input-low">Low</label>
+                        </p>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <main class="main-none">
+                <div class="none">
+                  <h2 class="h-inline white-text">Daily Task List</h2>
+                  <a href="#"><span class="icon-add white-text fs-add"></span></a>
+                </div>
+
+              <div class="tabs-task">
+                <a href="#" class="white-text a-global ver-line">To Do</a><a href="#">Done</a>
+              </div>
+
+              <div class="flex-task-violet mb-tasks">
+                <div class="day"><h4>Today</h4></div>
+                <div class="mr-task">
+                  <h3>Lorem ipsum dolor sit.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                </div>
+                <div><span class="icon-edit"></span></div>
+                <div class="w-trash"><span class="icon-trash"></span></div>
+                <div class="pomodoro">
+                  <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                </div>
+              </div>
+
+              <nav class="header-global-list">
+
+                <div class="flex-content-header-tasks-without-h2">
+                  <div>
+                    <h2 class="h-inline default-color">Global List</h2>
+                    <a href="#"><span class="icon-global-list-arrow-down fs-arrow-down"></span></a>
+                  </div>
+
+                  <nav class="nav-global-list fs">
+                    <li class="li-inline-global white-text">
+                      <a href="#">All</a>
+                      <span class="m-line">|</span>
+                    </li>
+                    <li class="li-inline-global">
+                      <a href="#">Urgent</a>
+                      <span class="m-line">|</span>
+                    </li>
+                    <li class="li-inline-global">
+                      <a href="#">High</a>
+                      <span class="m-line">|</span>
+                    </li>
+                    <li class="li-inline-global">
+                      <a href="#">Middle</a>
+                      <span class="m-line">|</span>
+                    </li>
+                    <li class="li-inline-global">
+                      <a href="#">Low</a>
+                    </li>
+                  </nav>
+
+                </div>
+              </nav>
+
+              <div class="clause-work">
+                <div><li class="categories-list-item-global work-global">Work</li></div>
+                <div class="flex-task-global">
+                  <div class="day">
+                    <h2 class="h-global">23</h2>
+                    <h6 class="h-global">MAY</h6>
+                  </div>
+                  <div class="task-orange-global">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                  </div>
+                  <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                  <div><span class="icon-edit"></span></div>
+                  <div class="w-trash"><span class="icon-trash"></span></div>
+                  <div class="pomodoro-orange">
+                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                  </div>
+                </div>
+
+                <div class="flex-task-global">
+                  <div class="day">
+                    <h2 class="h-global">23</h2>
+                    <h6 class="h-global">MAY</h6>
+                  </div>
+                  <div class="task-lemon-global">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                  </div>
+                  <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                  <div><span class="icon-edit"></span></div>
+                  <div class="w-trash"><span class="icon-trash"></span></div>
+                  <div class="pomodoro-blue">
+                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="clause-education">
+                <div><li class="categories-list-item-global education-global">Education</li></div>
+                <div class="flex-task-global table-none">
+                  <div class="day">
+                    <h2 class="h-global">23</h2>
+                    <h6 class="h-global">MAY</h6>
+                  </div>
+                  <div class="task-red-global">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                  </div>
+                  <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                  <div><span class="icon-edit"></span></div>
+                  <div class="w-trash"><span class="icon-trash"></span></div>
+                  <div class="pomodoro">
+                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                  </div>
+                </div>
+
+                <div class="flex-task-global">
+                  <div class="day">
+                    <h2 class="h-global">23</h2>
+                    <h6 class="h-global">MAY</h6>
+                  </div>
+                  <div class="task-global">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                  </div>
+                  <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                  <div><span class="icon-edit"></span></div>
+                  <div class="w-trash"><span class="icon-trash"></span></div>
+                  <div class="pomodoro-global">
+                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                  </div>
+                </div>
+              </div>
+
+            </main>
+
+
+        <!--        EDIT TASK-->
+<!--        <div>-->
+<!--        <div class="wrapper">-->
+<!--            <div class="spans">-->
+<!--                <span class="icon-close default-color fs-icon-close"></span>-->
+<!--                <span class="icon-check default-color fs-icon-close"></span>-->
+<!--            </div>-->
+<!--            <div class="wrap">-->
+<!--                <h1 class="white-text">Edit Task</h1>-->
+
+<!--                <div class="border-bottom-input">-->
+<!--                    <p class="white-text">TITLE</p>-->
+<!--                    <input type="text" placeholder="Add title here">-->
+<!--                </div>-->
+
+<!--                <div class="border-bottom-input">-->
+<!--                    <p class="white-text">DESCRIPTION</p>-->
+<!--                    <input type="text" placeholder="Add description here">-->
+<!--                </div>-->
+
+
+<!--                <div class="border-bottom-inputs-radio">-->
+<!--                    <p class="white-text">CATEGORY</p>-->
+
+<!--                    <form class="flex-inputs" action="#">-->
+<!--                        <p>-->
+<!--                            <input class="action-input input-work" type="radio" id="input-work" name="radio-group" checked>-->
+<!--                            <label for="input-work">Work</label>-->
+<!--                        </p>-->
+
+<!--                        <p>-->
+<!--                            <input class="action-input input-education" type="radio" id="input-education" name="radio-group">-->
+<!--                            <label for="input-education">Education</label>-->
+<!--                        </p>-->
+
+<!--                        <p>-->
+<!--                            <input class="action-input input-hobby" type="radio" id="input-hobby" name="radio-group">-->
+<!--                            <label for="input-hobby">Hobby</label>-->
+<!--                        </p>-->
+
+<!--                        <p>-->
+<!--                            <input class="action-input input-sport" type="radio" id="input-sport" name="radio-group">-->
+<!--                            <label for="input-sport">Sport</label>-->
+<!--                        </p>-->
+
+<!--                        <p>-->
+<!--                            <input class="action-input input-other" type="radio" id="input-other" name="radio-group">-->
+<!--                            <label for="input-other">Other</label>-->
+<!--                        </p>-->
+<!--                    </form>-->
+
+
+<!--                </div>-->
+
+<!--                <div class="border-bottom-input">-->
+<!--                    <p class="white-text">DEADLINE</p>-->
+<!--                    <input type="text" placeholder="May 23, 2022">-->
+<!--                </div>-->
+
+<!--                <div class="border-bottom-input">-->
+<!--                    <p class="white-text">ESTIMATION</p>-->
+<!--                    <form>-->
+<!--                        <div class="stars">-->
+<!--                            <input type="radio" name="star" class="star-5" id="star-5" />-->
+<!--                            <label class="star-5 pomodoro-label" for="star-5"></label>-->
+<!--                            <input type="radio" name="star" class="star-4" id="star-4" />-->
+<!--                            <label class="star-4 pomodoro-label" for="star-4"></label>-->
+<!--                            <input type="radio" name="star" class="star-3" id="star-3" />-->
+<!--                            <label class="star-3 pomodoro-label" for="star-3"></label>-->
+<!--                            <input type="radio" name="star" class="star-2" id="star-2" />-->
+<!--                            <label class="star-2 pomodoro-label" for="star-2"></label>-->
+<!--                            <input type="radio" name="star" class="star-1" id="star-1" />-->
+<!--                            <label class="star-1 pomodoro-label" for="star-1"></label>-->
+<!--                            <span></span>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+
+<!--                <div class="border-bottom-inputs-radio">-->
+<!--                    <p class="white-text">PRIORITY</p>-->
+
+<!--                    <form class="flex-priority-inputs" action="#">-->
+<!--                        <p class="mr-priority-input">-->
+<!--                            <input class="action-input input-urgent" type="radio" id="input-urgent" name="radio-group" checked>-->
+<!--                            <label for="input-urgent">Urgent</label>-->
+<!--                        </p>-->
+
+<!--                        <p class="mr-priority-input">-->
+<!--                            <input class="action-input input-high" type="radio" id="input-high" name="radio-group">-->
+<!--                            <label for="input-high">High</label>-->
+<!--                        </p>-->
+
+<!--                        <p class="mr-priority-input">-->
+<!--                            <input class="action-input input-middle" type="radio" id="input-middle" name="radio-group">-->
+<!--                            <label for="input-middle">Middle</label>-->
+<!--                        </p>-->
+
+<!--                        <p class="mr-priority-input">-->
+<!--                            <input class="action-input input-low" type="radio" id="input-low" name="radio-group">-->
+<!--                            <label for="input-low">Low</label>-->
+<!--                        </p>-->
+<!--                    </form>-->
+<!--                </div>-->
+
+
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <main class="main-none">-->
+<!--            <div class="none">-->
+<!--                <h2 class="h-inline white-text">Daily Task List</h2>-->
+<!--                <a href="#"><span class="icon-add white-text fs-add"></span></a>-->
+<!--            </div>-->
+
+<!--            <div class="tabs-task">-->
+<!--                <a href="#" class="white-text a-global ver-line">To Do</a><a href="#">Done</a>-->
+<!--            </div>-->
+
+<!--            <div class="flex-task-violet mb-tasks">-->
+<!--                <div class="day"><h4>Today</h4></div>-->
+<!--                <div class="mr-task">-->
+<!--                    <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                </div>-->
+<!--                <div><span class="icon-edit"></span></div>-->
+<!--                <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                <div class="pomodoro">-->
+<!--                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <nav class="header-global-list">-->
+
+<!--                <div class="flex-content-header-tasks-without-h2">-->
+<!--                    <div>-->
+<!--                        <h2 class="h-inline default-color">Global List</h2>-->
+<!--                        <a href="#"><span class="icon-global-list-arrow-down fs-arrow-down"></span></a>-->
+<!--                    </div>-->
+
+<!--                    <nav class="nav-global-list fs">-->
+<!--                        <li class="li-inline-global white-text">-->
+<!--                            <a href="#">All</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Urgent</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">High</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Middle</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Low</a>-->
+<!--                        </li>-->
+<!--                    </nav>-->
+
+<!--                </div>-->
+<!--            </nav>-->
+
+<!--            <div class="clause-work">-->
+<!--                <div><li class="categories-list-item-global work-global">Work</li></div>-->
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-orange-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-orange">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-lemon-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-blue">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="clause-education">-->
+<!--                <div><li class="categories-list-item-global education-global">Education</li></div>-->
+<!--                <div class="flex-task-global table-none">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-red-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-global">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </main>-->
+<!--        </div>-->
+
+        <main class="main-none">
+            <div class="none">
+                <h2 class="h-inline white-text">Daily Task List</h2>
+                <a href="#"><span class="icon-add white-text fs-add"></span></a>
+            </div>
+
+            <div class="tabs-task">
+                <a href="#" class="white-text a-global ver-line">To Do</a><a href="#">Done</a>
+            </div>
+
+            <div class="flex-task-violet mb-tasks">
+                <div class="day"><h4>Today</h4></div>
+                <div class="mr-task">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                </div>
+                <div><span class="icon-edit"></span></div>
+                <div class="w-trash"><span class="icon-trash"></span></div>
+                <div class="pomodoro">
+                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                </div>
+            </div>
+
+            <nav class="header-global-list">
+
+                <div class="flex-content-header-tasks-without-h2">
+                    <div>
+                        <h2 class="h-inline default-color">Global List</h2>
+                        <a href="#"><span class="icon-global-list-arrow-down fs-arrow-down"></span></a>
+                    </div>
+
+                    <nav class="nav-global-list fs">
+                        <li class="li-inline-global white-text">
+                            <a href="#">All</a>
+                            <span class="m-line">|</span>
+                        </li>
+                        <li class="li-inline-global">
+                            <a href="#">Urgent</a>
+                            <span class="m-line">|</span>
+                        </li>
+                        <li class="li-inline-global">
+                            <a href="#">High</a>
+                            <span class="m-line">|</span>
+                        </li>
+                        <li class="li-inline-global">
+                            <a href="#">Middle</a>
+                            <span class="m-line">|</span>
+                        </li>
+                        <li class="li-inline-global">
+                            <a href="#">Low</a>
+                        </li>
+                    </nav>
+
+                </div>
+            </nav>
+
+            <div class="clause-work">
+                <div><li class="categories-list-item-global work-global">Work</li></div>
+                <div class="flex-task-global">
+                    <div class="day">
+                        <h2 class="h-global">23</h2>
+                        <h6 class="h-global">MAY</h6>
+                    </div>
+                    <div class="task-orange-global">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                    </div>
+                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                    <div><span class="icon-edit"></span></div>
+                    <div class="w-trash"><span class="icon-trash"></span></div>
+                    <div class="pomodoro-orange">
+                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                    </div>
+                </div>
+
+                <div class="flex-task-global">
+                    <div class="day">
+                        <h2 class="h-global">23</h2>
+                        <h6 class="h-global">MAY</h6>
+                    </div>
+                    <div class="task-lemon-global">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                    </div>
+                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                    <div><span class="icon-edit"></span></div>
+                    <div class="w-trash"><span class="icon-trash"></span></div>
+                    <div class="pomodoro-blue">
+                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clause-education">
+                <div><li class="categories-list-item-global education-global">Education</li></div>
+                <div class="flex-task-global table-none">
+                    <div class="day">
+                        <h2 class="h-global">23</h2>
+                        <h6 class="h-global">MAY</h6>
+                    </div>
+                    <div class="task-red-global">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                    </div>
+                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                    <div><span class="icon-edit"></span></div>
+                    <div class="w-trash"><span class="icon-trash"></span></div>
+                    <div class="pomodoro">
+                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                    </div>
+                </div>
+
+                <div class="flex-task-global">
+                    <div class="day">
+                        <h2 class="h-global">23</h2>
+                        <h6 class="h-global">MAY</h6>
+                    </div>
+                    <div class="task-global">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>
+                    </div>
+                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>
+                    <div><span class="icon-edit"></span></div>
+                    <div class="w-trash"><span class="icon-trash"></span></div>
+                    <div class="pomodoro-global">
+                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        </div>
+
+
+        <!--        REMOVE TASK-->
+<!--        <div class="wrapper">-->
+<!--            <div class="spans">-->
+<!--                <span class="icon-close default-color fs-icon-close"></span>-->
+<!--            </div>-->
+<!--            <div class="wrap">-->
+<!--                <h2 class="white-text">Remove Task</h2>-->
+
+
+<!--                <h1 class="default-color mb-remove">Are you sure you want to remove selected rask(s)?</h1>-->
+
+
+
+<!--            </div>-->
+
+<!--            <div class="btns">-->
+<!--                <button class="btn btn-primary">Cancel</button>-->
+<!--                <button class="btn btn-warning">Remove</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <main class="main-none">-->
+<!--            <div class="none">-->
+<!--                <h2 class="h-inline white-text">Daily Task List</h2>-->
+<!--                <a href="#"><span class="icon-add white-text fs-add"></span></a>-->
+<!--            </div>-->
+
+<!--            <div class="tabs-task">-->
+<!--                <a href="#" class="white-text a-global ver-line">To Do</a><a href="#">Done</a>-->
+<!--            </div>-->
+
+<!--            <div class="flex-task-violet mb-tasks">-->
+<!--                <div class="day"><h4>Today</h4></div>-->
+<!--                <div class="mr-task">-->
+<!--                    <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                </div>-->
+<!--                <div><span class="icon-edit"></span></div>-->
+<!--                <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                <div class="pomodoro">-->
+<!--                    <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <nav class="header-global-list">-->
+
+<!--                <div class="flex-content-header-tasks-without-h2">-->
+<!--                    <div>-->
+<!--                        <h2 class="h-inline default-color">Global List</h2>-->
+<!--                        <a href="#"><span class="icon-global-list-arrow-down fs-arrow-down"></span></a>-->
+<!--                    </div>-->
+
+<!--                    <nav class="nav-global-list fs">-->
+<!--                        <li class="li-inline-global white-text">-->
+<!--                            <a href="#">All</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Urgent</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">High</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Middle</a>-->
+<!--                            <span class="m-line">|</span>-->
+<!--                        </li>-->
+<!--                        <li class="li-inline-global">-->
+<!--                            <a href="#">Low</a>-->
+<!--                        </li>-->
+<!--                    </nav>-->
+
+<!--                </div>-->
+<!--            </nav>-->
+
+<!--            <div class="clause-work">-->
+<!--                <div><li class="categories-list-item-global work-global">Work</li></div>-->
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-orange-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-orange">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-lemon-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-blue">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="clause-education">-->
+<!--                <div><li class="categories-list-item-global education-global">Education</li></div>-->
+<!--                <div class="flex-task-global table-none">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-red-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="flex-task-global">-->
+<!--                    <div class="day">-->
+<!--                        <h2 class="h-global">23</h2>-->
+<!--                        <h6 class="h-global">MAY</h6>-->
+<!--                    </div>-->
+<!--                    <div class="task-global">-->
+<!--                        <h3>Lorem ipsum dolor sit.</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque error itaque nisi, odio porro.</p>-->
+<!--                    </div>-->
+<!--                    <div><span class="icon-arrows-up ml-arrow-up"></span></div>-->
+<!--                    <div><span class="icon-edit"></span></div>-->
+<!--                    <div class="w-trash"><span class="icon-trash"></span></div>-->
+<!--                    <div class="pomodoro-global">-->
+<!--                        <div class="on-pomodoro"><p class="text-pomodoro">3</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </main>-->
+
+
+</body>
+</html>

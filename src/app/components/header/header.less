@@ -1,0 +1,97 @@
+@import "../../../assets/less/helpers/_mixins.less";
+@import "../../../assets/less/helpers/_variables";
+
+h1.test {
+ .opacity(0.5);
+  text-align: center;
+}
+
+.pos-sticky {
+ padding-bottom: 30px;
+ z-index: 1;
+ top: 0;
+ position: sticky;
+ background: @background-body;
+}
+
+.shadow{
+ box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.for-task-header {
+ min-width: 720px;
+ margin: 0 auto;
+ padding: 32px 24px 32px;
+
+ @media @breakpoint-tablet {
+  max-width: 1396px;
+  padding: 44px;
+ }
+
+ @media @breakpoint-desktop {
+  padding: 44px 108px 44px;
+ }
+}
+
+.flex-content-header-tasks-sticky {
+ display: flex;
+ align-items: @center;
+ justify-content: space-between;
+
+  .header-title-none {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 250px;
+  }
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+
+   .header-title-none, #header-title, #specific_add, .add-task-header {
+    visibility: hidden;
+   }
+  }
+}
+
+.display-none {
+ visibility: hidden;
+}
+
+#img-pomodoro-header {
+ display: none;
+}
+
+.li-inline {
+ display: inline;
+ margin-left: 42px;
+ padding: 3px;
+}
+
+.white-text {
+ color: @color-text;
+}
+
+.count-delete-task:before {
+ content: '';
+ position: relative;
+ top: 10px;
+ color: red;
+ width: 20px;
+ background: blue;
+ height: 20px;
+ border-radius: 50%;
+ display: inline-block;
+ margin-left: -15px;
+}
+
+.count-delete-task:after {
+ content: attr(data-content);
+ position: relative;
+ top: 7px;
+ left: -16px;
+ color: red;
+}
+
+.add-task-header {
+ cursor: pointer;
+}

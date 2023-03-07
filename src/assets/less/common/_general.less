@@ -1,0 +1,85 @@
+html{
+  font-family: "Roboto Light", sans-serif;
+}
+
+body {
+  background: @background-body;
+}
+
+.main {
+  position: relative;
+}
+
+#for_notification {
+  position: sticky;
+  bottom: 20%;
+  z-index: 2;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  min-width: 720px;
+  width: 80vw;
+  height: 90vh;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media @breakpoint-tablet {
+    max-width: 1396px;
+    padding: 0 44px;
+  }
+
+  @media @breakpoint-desktop {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+
+a span:hover,
+a span:focus {
+  color: @color-action;
+}
+
+a {
+  text-decoration: none;
+  color: @color-default;
+
+  &:hover, &:focus {
+    color: @color-text;
+  }
+
+  &:checked {
+    color: @color-default;
+  }
+}
+
+.white-text {
+  color: @color-text;
+}
+
+.ver-line {
+  margin-right: 15px;
+}
+
+.ver-line:after {
+  content: '|';
+  margin-left: 15px;
+  .color-text(@color-default);
+}
+
+.pos-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625em;
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    top: 45%;
+  }
+}
+
+.fs-arrow {
+  .font-size(70px)
+}

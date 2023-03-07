@@ -1,0 +1,118 @@
+{{#if isDelete}}
+    <div id="modals_wrapper" class="wrapper">
+        <div class="spans">
+            <span class="icon-close default-color fs-icon-close"></span>
+        </div>
+        <div class="wrap">
+            <h1 class="white-text">Remove Task</h1>
+            <h1 class="default-color mb-remove">Are you sure you want to remove selected task(s)?</h1>
+        </div>
+    </div>
+{{else}}
+    <div id="modals_wrapper" class="wrapper">
+        <div class="spans">
+            <span class="icon-close default-color fs-icon-close"></span>
+            <span id="icon-check" class="icon-check default-color fs-icon-close"></span>
+        </div>
+        <div class="wrap">
+            {{#if currentTask}}
+                <h1 id="specify" class="white-text">Edit Task</h1>
+            {{else}}
+                <h1 id="specify" class="white-text">Add Task</h1>
+            {{/if}}
+            <div class="border-bottom-input">
+                <p class="white-text">TITLE</p>
+                <input type="text" id="title" placeholder="Add title here">
+            </div>
+
+            <div class="border-bottom-input">
+                <p class="white-text">DESCRIPTION</p>
+                <input type="text" id="description" placeholder="Add description here">
+            </div>
+
+
+            <div class="border-bottom-inputs-radio">
+                <p class="white-text">CATEGORY</p>
+
+                <form id="category" class="flex-inputs" action="#">
+                    <p>
+                        <input class="action-input input-work" type="radio" id="input-work" value="work" name="radio-group" checked>
+                        <label for="input-work">Work</label>
+                    </p>
+
+                    <p>
+                        <input class="action-input input-education" type="radio" id="input-education" value="education" name="radio-group">
+                        <label for="input-education">Education</label>
+                    </p>
+
+                    <p>
+                        <input class="action-input input-hobby" type="radio" id="input-hobby" value="hobby" name="radio-group">
+                        <label for="input-hobby">Hobby</label>
+                    </p>
+
+                    <p>
+                        <input class="action-input input-sport" type="radio" id="input-sport" value="sport" name="radio-group">
+                        <label for="input-sport">Sport</label>
+                    </p>
+
+                    <p>
+                        <input class="action-input input-other" type="radio" id="input-other" value="other" name="radio-group">
+                        <label for="input-other">Other</label>
+                    </p>
+                </form>
+
+
+            </div>
+
+            <div class="border-bottom-input">
+                <p class="white-text">DEADLINE</p>
+                <input type="text" id="deadline" placeholder="Select a date">
+            </div>
+
+            <div class="border-bottom-input">
+                <p class="white-text">ESTIMATION</p>
+                <form>
+                    <div class="pomodoros">
+                        <input type="radio" name="pomodoro" class="pomodoro-5" value="5" id="pomodoro-5" />
+                        <label class="pomodoro-5 pomodoro-label" for="pomodoro-5"></label>
+                        <input type="radio" name="pomodoro" class="pomodoro-4" value="4" id="pomodoro-4" />
+                        <label class="pomodoro-4 pomodoro-label" for="pomodoro-4"></label>
+                        <input type="radio" name="pomodoro" class="pomodoro-3" value="3" id="pomodoro-3" />
+                        <label class="pomodoro-3 pomodoro-label" for="pomodoro-3"></label>
+                        <input type="radio" name="pomodoro" class="pomodoro-2" value="2" id="pomodoro-2" />
+                        <label class="pomodoro-2 pomodoro-label" for="pomodoro-2"></label>
+                        <input type="radio" name="pomodoro" class="pomodoro-1" value="1" id="pomodoro-1" />
+                        <label class="pomodoro-1 pomodoro-label" for="pomodoro-1"></label>
+                        <span></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="border-bottom-inputs-radio">
+                <p class="white-text">PRIORITY</p>
+
+                <form class="flex-priority-inputs" action="#">
+                    <p class="mr-priority-input">
+                        <input class="action-input input-urgent" type="radio" id="input-urgent" value="urgent" name="radio" checked>
+                        <label for="input-urgent">Urgent</label>
+                    </p>
+
+                    <p class="mr-priority-input">
+                        <input class="action-input input-high" type="radio" id="input-high" value="high" name="radio">
+                        <label for="input-high">High</label>
+                    </p>
+
+                    <p class="mr-priority-input">
+                        <input class="action-input input-middle" type="radio" id="input-middle" value="middle" name="radio">
+                        <label for="input-middle">Middle</label>
+                    </p>
+
+                    <p class="mr-priority-input">
+                        <input class="action-input input-low" type="radio" id="input-low" value="low" name="radio">
+                        <label for="input-low">Low</label>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+{{/if}}

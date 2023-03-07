@@ -1,0 +1,11 @@
+<li id="pomodoro-settings-item-{{id}}" class="pomodoros-list-item {{styleClass}}">
+        <div class="flex-list-content">
+            <p class="white-text">{{title}}</p>
+            <span class="border-bottom fs-content">
+                <button id="{{id}}-decrease" class="pomodoros-bg-none cursor decrease">-</button>
+                <input id="{{id}}" class="pomodoros-bg-none text-center width-input" type="number" step="{{step}}" min={{min}} max={{max}} value={{value}}>
+                <button id="{{id}}-increase" class="pomodoros-bg-none cursor increase">+</button>
+            </span>
+        </div>
+        <p>Please select a value between {{min}} and {{max}} <span class="white-text">{{unit}}</span></p>
+</li>

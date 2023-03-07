@@ -1,0 +1,375 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+.highlight {
+  width: 140px;
+  text-align: center;
+  font-size: 16px;
+  color: #3C5162;
+  font-weight: 600;
+  background: rgba(219, 234, 245, 0.9);
+  opacity: 0.9;
+  border: none;
+  border-radius: 2px;
+}
+
+.highlight::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(219, 234, 245, 0.9) transparent;
+}
+//[data-title]:after {
+//  content: attr(data-title);
+//  background-color: #4b9c2c;
+//  color: #ffffff;
+//  font-size: 150%;
+//  position: absolute;
+//  padding: 4px 8px 4px 8px;
+//  visibility: hidden;
+//}
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+.work-global-task {
+  .border-left-global(@work-color)
+}
+.background-remove-work {
+  background: @work-color;
+}
+
+.education-global-task {
+  .border-left-global(@education-color)
+}
+.background-remove-education {
+  background: @education-color;
+}
+
+.hobby-global-task {
+  .border-left-global(@hobby-color)
+}
+.background-remove-hobby {
+  background: @hobby-color;
+}
+
+.sport-global-task {
+  .border-left-global(@sport-color)
+}
+.background-remove-sport {
+  background: @sport-color;
+}
+
+.other-global-task {
+  .border-left-global(@other-color)
+}
+.background-remove-other {
+  background: @other-color;
+}
+
+.work-task {
+  .border-left(@work-color)
+}
+
+.education-task {
+  .border-left(@education-color)
+}
+
+.hobby-task {
+  .border-left(@hobby-color)
+}
+
+.sport-task {
+  .border-left(@sport-color)
+}
+
+.other-task {
+  .border-left(@other-color)
+}
+
+
+
+.pomodoro-urgent {
+  .bg-tomato(@color-tomato);
+  height: 100%;
+}
+
+.color-header-urgent {
+  .color-text(@color-tomato);
+}
+
+.pomodoro-high {
+  .bg-tomato(@color-tomato-orange);
+  height: 100%;
+}
+
+.color-header-high {
+  .color-text(@color-tomato-orange);
+}
+
+.pomodoro-middle {
+  .bg-tomato(@color-tomato-lemon);
+  height: 100%;
+}
+
+.color-header-middle {
+  .color-text(@color-tomato-lemon);
+}
+
+.pomodoro-low {
+  .bg-tomato(@btn-success-hover-color);
+  height: 100%;
+}
+
+.color-header-low {
+  .color-text(@btn-success-hover-color);
+}
+
+
+
+.size-header-task {
+  font-size: 24px;
+}
+
+.mb-header-task {
+  margin-bottom: 20px;
+}
+
+.mb-tasks {
+  margin-bottom: 64px!important;
+}
+
+.date {
+  width: 96px;
+  text-align: @center;
+  margin: 0 16px;
+}
+
+.mr-task {
+  margin-right: 57px;
+
+  h3 {
+    margin-bottom: -10px;
+    .color-text(@color-tomato);
+  }
+}
+
+.mr-icon {
+  margin-right: 20px;
+}
+
+.flex1 {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.w-trash .icon-trash, .icon-edit, .icon-arrows-up {
+  color: @icon-color;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: @color-action;
+  }
+
+  &:checked {
+    color: @color-default;
+  }
+
+}
+
+.on-pomodoro {
+  display: flex;
+  text-align: @center;
+  align-items: @center;
+  justify-content: @center;
+  width: 88px;
+  height: 100%;
+  background-image: url("/images/Pomodoro.svg");
+  background-repeat: no-repeat;
+  background-position: @center;
+}
+
+.text-pomodoro {
+  color: @color-text;
+  .font-size(24px);
+  margin-top: 5px;
+}
+
+.flex-task-global {
+  display: flex;
+  height: @height-block;
+  align-items: @center;
+  color: @color-default;
+  justify-content: space-between;
+  margin-bottom: @margin-bottom-task;
+  background: @color-text;
+}
+
+.trash-global::after {
+  content: "1";
+  text-align: center;
+  color: @color-text;
+  font-size: 18px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: -17px;
+  margin-top: 13px;
+  background: @color-tomato;
+}
+
+.task-orange-global h3 {
+  margin-bottom: -10px;
+  .color-text(@color-text-task);
+}
+
+.ml-arrow-up {
+  margin-right: 19px;
+}
+
+.mb-for-day {
+  margin-bottom: 10px;
+}
+
+.pomodoro-orange {
+  .bg-tomato(@color-tomato-orange);
+  height: 100%;
+  width: 88px;
+
+  &:hover {
+    .bg-tomato(@color-bg-hover-pomodoro);
+  }
+}
+
+.flex-task-violet {
+  .border-left(@color-border-violet)
+}
+
+.bg-done {
+  .bg-tomato(@bg-done);
+}
+
+.trash-remove-violet {
+  .bg-tomato(@hobby-color);
+  height: 100%;
+}
+
+.on-trash-remove {
+  display: flex;
+  text-align: @center;
+  align-items: @center;
+  justify-content: @center;
+  width: 88px;
+  height: 100%;
+}
+
+.white-text {
+  color: @color-text;
+}
+
+.pl-remove {
+  padding-left: 20px;
+}
+
+.trash-close-violet {
+  .bg-tomato(@bg-close);
+  height: 100%;
+}
+
+.warning-color {
+  color: @color-for-overdue-task;
+}
+
+.task-global h3 {
+  margin-bottom: -10px;
+  .color-text(@btn-success-color);
+}
+
+.pomodoro-global {
+  .bg-tomato(@btn-success-color);
+  height: 100%;
+  width: 88px;
+}
+
+.flex-task-remove {
+  .flex-task-remove();
+  margin-bottom: 12px;
+}
+
+.trash-remove-violet {
+  .bg-tomato(@hobby-color);
+  height: 100%;
+}
+
+.fs-icon {
+  .font-size(56px)!important;
+}
+
+.fs-icon-trash {
+  .font-size(50px)!important;
+}
+
+.specify-trash {
+  display: none;
+}
+
+.block-trash {
+  display: block;
+  .for-remove-mode();
+}
+
+.block-close {
+  display: none;
+  .for-remove-mode();
+}

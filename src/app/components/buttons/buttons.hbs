@@ -1,0 +1,26 @@
+<div class="{{#if btnsPomodoro}}btn-flex {{else}}btns{{/if}} {{#if btnsModalsDelete}}pos-btns-abs{{/if}}">
+    {{#if btnStart}}
+        <button class="btn-timer">Start</button>
+    {{/if}}
+    {{#if btnStartPomodoro}}
+        <button class="btn btn-start-pomodoro">Start Pomodoro</button>
+        {{#if btnFinishTask}}
+            <button class="btn btn-finish-task ml-btn-finish-task">Finish Task</button>
+        {{/if}}
+    {{/if}}
+    {{#if btnsPomodoro}}
+        <button class="btn btn-warning-timer">Fail Pomodora</button>
+        <button class="btn btn-success-timer">Finish Pomodora</button>
+    {{/if}}
+    {{#if btnsSettings}}
+        <button class="btn btn-primary">Go to Tasks</button>
+        <button class="btn btn-success">Save</button>
+    {{/if}}
+    {{#if btnCategories}}
+        <button class="btn btn-main">Go to Tasks</button>
+    {{/if}}
+    {{#if btnsModalsDelete}}
+        <button class="btn btn-cancel">Cancel</button>
+        <button class="btn btn-warning">Remove</button>
+    {{/if}}
+</div>

@@ -1,0 +1,90 @@
+@import "../../../assets/less/helpers/_mixins.less";
+@import "../../../assets/less/helpers/_variables";
+
+.notification {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  margin-bottom: 32px;
+  border: 1px solid @color-text;
+  border-radius: 4px;
+
+  @media @breakpoint-tablet {
+    float: right;
+    width: 55%;
+    margin-top: 20px;
+  }
+
+  @media @breakpoint-desktop {
+    float: right;
+    width: 40%;
+    margin-top: 32px;
+  }
+}
+
+.flex-notification-icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  opacity: 0.8;
+}
+
+.icon-pomodoro-container {
+  .block-icon(@btn-primary-color);
+}
+
+.white-text {
+  color: @color-text;
+}
+
+.block-message {
+  .block-message-param(@btn-primary-color);
+}
+
+.message {
+  border-radius: 0 4px 4px 0;
+}
+
+.for-icon {
+  border-radius: 4px 0 0 4px;
+}
+
+.ml-message {
+  margin-left: 21px;
+}
+
+.notification-close {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.fs-icon-close {
+  .font-size(32px);
+}
+
+.block-message-error {
+  .block-message-param(@color-tomato);
+}
+
+.icon-pomodoro-error-container {
+  .block-icon(@color-tomato);
+}
+
+.block-message-successful {
+  .block-message-param(@btn-success-color);
+}
+
+.icon-pomodoro-successful-container {
+  .block-icon(@btn-success-color);
+}
+
+.block-message-warning {
+  .block-message-param(@color-tomato-orange);
+}
+
+.icon-pomodoro-warning-container {
+  .block-icon(@color-tomato-orange);
+}

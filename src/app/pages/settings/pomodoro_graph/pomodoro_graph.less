@@ -1,0 +1,61 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+.flex-graph {
+  display: flex;
+  justify-content: start;
+}
+
+.flex-number-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  @media @breakpoint-mobile {
+    & .default-color:nth-child(even) {
+      visibility: hidden;
+    }
+  }
+}
+
+.marker {
+  width: 55px;
+  position: relative;
+}
+
+.marker:before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  top: -10px;
+  border-radius: 50%;
+  background: #00D4D9;
+}
+
+.text-center {
+  text-align: @center;
+}
+
+.graph {
+  height: 20px;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.all-time {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.text-for-cycle {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 40%;
+
+  @media @breakpoint-desktop {
+    margin-left: 45%;
+    width: 55%;
+  }
+}

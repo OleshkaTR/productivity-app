@@ -1,0 +1,116 @@
+<div class="tabs-task">
+    <a id="do" href="#" class="active a-global ver-line do">To Do</a><a id="done" class="done" href="#">Done</a>
+</div>
+
+<div id="daily-task" class="daily-task">
+    {{#if removeMode}}
+        <div class="tabs-task mt-tabs pos-left">
+            <a href="#" class="e-text a-global ver-line select-daily">Select All</a><a class="deselect-daily" href="#">Deselect All</a>
+        </div>
+    {{/if}}
+</div>
+
+<div id="daily-task-done" class="daily-task-done"></div>
+
+<nav class="header-global-list">
+
+    <div class="flex-content-header-tasks-without-h2">
+      <div class="flex-arrow">
+        <h2 class="h-inline default-color fs">Global List</h2>
+        <a title="Go To Global List" id="arrow" class="arrow" href="#"><span class="icon-global-list-arrow-down fs-arrow-down"></span></a>
+      </div>
+
+      <nav class="nav-global-list fs">
+        <li class="li-inline-global">
+          <a id="all-tasks" class="all-tasks active" href="#">All</a>
+          <span class="m-line">|</span>
+        </li>
+        <li class="li-inline-global">
+          <a id="urgent-tasks" class="urgent-tasks" href="#">Urgent</a>
+          <span class="m-line">|</span>
+        </li>
+        <li class="li-inline-global">
+          <a id="high-tasks" class="high-tasks" href="#">High</a>
+          <span class="m-line">|</span>
+        </li>
+        <li class="li-inline-global">
+          <a id="middle-tasks" class="middle-tasks" href="#">Middle</a>
+          <span class="m-line">|</span>
+        </li>
+        <li class="li-inline-global">
+          <a id="low-tasks" class="low-tasks" href="#">Low</a>
+        </li>
+      </nav>
+
+    </div>
+
+    {{#if removeMode}}
+        <div class="tabs-task pos-left">
+            <a href="#" class="a-global ver-line select-global">Select All</a><a class="deselect-global" href="#">Deselect All</a>
+        </div>
+    {{/if}}
+</nav>
+
+<div id="wrapper-global-tasks">
+    <div id="global-wrapper">
+        {{#if global.work}}
+            <div id="global-work" class="clause-work">
+                <div><li class="categories-list-item-global work-global">Work</li></div>
+                <div id="global-task-work"></div>
+            </div>
+        {{/if}}
+
+        {{#if global.education}}
+            <div id="global-education" class="clause-education">
+                <div><li class="categories-list-item-global education-global">Education</li></div>
+                <div id="global-task-education"></div>
+            </div>
+        {{/if}}
+
+        {{#if global.hobby}}
+            <div id="global-hobby" class="clause-hobby">
+                <div><li class="categories-list-item-global hobby-global">Hobby</li></div>
+                <div id="global-task-hobby"></div>
+            </div>
+        {{/if}}
+
+        {{#if global.sport}}
+            <div id="global-sport" class="clause-sport">
+                <div><li class="categories-list-item-global sport-global">Sport</li></div>
+                <div id="global-task-sport"></div>
+            </div>
+        {{/if}}
+
+        {{#if global.other}}
+            <div id="global-other" class="clause-other">
+                <div><li class="categories-list-item-global other-global">Other</li></div>
+                <div id="global-task-other"></div>
+            </div>
+        {{/if}}
+    </div>
+
+
+    <div id="urgent" style="display: none">
+        <div id="global-urgent" class="clause-other">
+            <div id="global-task-other"></div>
+        </div>
+    </div>
+
+    <div id="high" style="display: none">
+        <div id="global-high" class="clause-other">
+            <div id="global-task-other"></div>
+        </div>
+    </div>
+
+    <div id="middle" style="display: none">
+        <div id="global-middle" class="clause-other">
+            <div id="global-task-other"></div>
+        </div>
+    </div>
+
+    <div id="low" style="display: none">
+        <div id="global-low" class="clause-other">
+            <div id="global-task-other"></div>
+        </div>
+    </div>
+</div>

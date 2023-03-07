@@ -1,0 +1,20 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+.categories-list {
+  width: 60%;
+  margin: 0 auto 270px;
+  list-style: none;
+
+  @media @breakpoint-tablet {
+    margin: 0 auto 80px;
+  }
+
+  .categories-list-item {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid @color-default;
+    position: relative;
+    color: @color-default;
+  }
+}

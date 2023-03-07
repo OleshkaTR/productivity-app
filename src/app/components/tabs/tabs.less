@@ -1,0 +1,41 @@
+@import "../../../assets/less/helpers/_mixins.less";
+@import "../../../assets/less/helpers/_variables";
+
+.tabs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -8%;
+
+  @media @breakpoint-tablet {
+    margin-top: 8%;
+  }
+}
+.active {
+  color: white;
+}
+
+.white-text {
+  color: @color-text;
+}
+
+.ver-line {
+  margin-right: 15px;
+}
+
+.ver-line:after {
+  content: '|';
+  margin-left: 15px;
+  .color-text(@color-default);
+}
+
+.pos-top-tabs {
+  margin-top: -720px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  @media @breakpoint-desktop, @breakpoint-tablet {
+    margin-top: -500px;
+  }
+}

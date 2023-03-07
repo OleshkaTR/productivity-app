@@ -1,0 +1,90 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+.pomodoros-list {
+  width: 60%;
+  margin: 0 auto 50px;
+  list-style: none;
+
+  @media @breakpoint-tablet {
+    columns: 2;
+    column-gap: 40px;
+    width: 100%;
+  }
+
+  .pomodoros-list-item {
+    width: 355px;
+    margin: 0 auto 20px;
+    padding-bottom: 12px;
+    position: relative;
+    color: @color-default;
+  }
+}
+
+.work-time::before {
+  .for-action-before(@work-color);
+}
+
+.work-iter::before {
+  .for-action-before(@education-color);
+}
+
+.short-brake::before {
+  .for-action-before(@hobby-color);
+}
+
+.long-brake::before {
+  .for-action-before(@sport-color);
+}
+
+.border-bottom {
+  border-bottom: 1px solid @color-default;
+  color: @color-default;
+}
+
+.flex-list-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 320px;
+
+  @media @breakpoint-tablet, @breakpoint-desktop {
+    margin-bottom: 15px;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid @color-default;
+  color: @color-default;
+}
+
+.fs-content {
+  .font-size(18px)
+}
+
+.pomodoros-bg-none {
+  background: @none;
+  border: @none;
+  color: @color-default;
+  margin-bottom: 5px;
+}
+
+.cursor {
+  cursor: pointer;
+
+  &:hover {
+    color: @color-action;
+  }
+}
+
+.text-center {
+  text-align: @center;
+}
+
+.width-input {
+  width: 100px;
+}
+
+.white-text {
+  color: @color-text;
+}

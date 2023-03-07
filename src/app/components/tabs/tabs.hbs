@@ -1,0 +1,23 @@
+{{#if tabsSetting}}
+    <div class="tabs">
+        <a href="#" class="ver-line white-text">Pomodoros</a><a class="to-categories" href="#">Categories</a>
+    </div>
+{{/if}}
+{{#if tabsCategories}}
+    <div class="tabs">
+        <a href="#" class="ver-line to-settings">Pomodoros</a><a class="white-text" href="#">Categories</a>
+    </div>
+{{/if}}
+
+
+{{#if tabsReportRangeDate}}
+    <div class="pos-text-reports fs-reports-text pos-top-tabs">
+        <a id="day" href="#" class="ver-line day {{#if day}}active{{/if}}">Day</a><a id="week" href="#" class="{{#if week}}active{{/if}} ver-line fs-reports-text week">Week</a><a id="month" class="{{#if month}}active{{/if}} month" href="#">Month</a>
+    </div>
+{{/if}}
+{{#if tabsReportType}}
+    <div class="pos-text-reports fs-reports-text">
+        <a id="failed_pomodoros" href="#" class="{{#if pomodoros}}active{{/if}} ver-line failed_pomodoros">Pomodoros</a><a id="failed_tasks" href="#" class="{{#if tasks}}active{{/if}} failed_tasks">Tasks</a>
+    </div>
+{{/if}}
+

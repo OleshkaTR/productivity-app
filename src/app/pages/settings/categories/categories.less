@@ -1,0 +1,26 @@
+@import "../../../../assets/less/helpers/_variables";
+@import "../../../../assets/less/helpers/_mixins";
+
+.white-text {
+  color: @color-text;
+}
+
+.btn-main {
+  width: 100%;
+  background: #59ABE3;
+
+  @media @breakpoint-tablet {
+    margin-bottom: 135px;
+  }
+
+  &:hover, &:focus {
+    background: @action-btn;
+  }
+
+  @media @breakpoint-tablet {
+    width: @width-btn;
+    height: @height-btn;
+    margin: 0 auto;
+    display: block;
+  }
+}

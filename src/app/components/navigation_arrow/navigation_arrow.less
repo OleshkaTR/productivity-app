@@ -1,0 +1,92 @@
+@import "../../../assets/less/helpers/_mixins.less";
+@import "../../../assets/less/helpers/_variables";
+
+.tooltip-timer {
+  display: inline-block;
+
+  &:hover {
+    .tooltiptext-timer-left{
+      visibility: visible;
+    }
+
+    .tooltiptext-timer-right{
+      visibility: visible;
+    }
+  }
+
+  .tooltiptext-timer-left {
+    .tooltiptext-timer-mixin();
+    left: 0;
+  }
+
+  .tooltiptext-timer-left::after {
+    .tooltiptext-timer-mixin-after();
+  }
+
+  .tooltiptext-timer-right {
+    .tooltiptext-timer-mixin();
+    right: 0;
+  }
+
+  .tooltiptext-timer-right::after {
+    .tooltiptext-timer-mixin-after();
+  }
+}
+
+.default-color {
+  color: @color-default;
+}
+
+.fs-arrow {
+  .font-size(70px)
+}
+
+.navigation-arrow-left-spec {
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+  top: 35%;
+  left: 0;
+  bottom: 15%;
+
+  @media @breakpoint-tablet , @breakpoint-desktop {
+    top: 45%;
+  }
+}
+
+.navigation-arrow-left {
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+  top: 35%;
+  left: 0;
+  bottom: 15%;
+
+  @media @breakpoint-tablet , @breakpoint-desktop {
+    top: 50%;
+  }
+}
+.navigation-arrow-right {
+  overflow: hidden;
+  position: absolute;
+  width: 50%;
+  top: 35%;
+  bottom: 25%;
+  right: 0;
+  text-align: end;
+
+  @media @breakpoint-tablet , @breakpoint-desktop {
+    top: 50%;
+  }
+}
+
+.navigation-arrow > * {
+  position: absolute;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+.navigation-arrow__next {
+  right: 0;
+}
